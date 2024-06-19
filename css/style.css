@@ -534,6 +534,10 @@ section {
     font-size: 24px;
   }
 
+  .projects__item:nth-of-type(3n+4)>.projects__link >.projects__subtitle {
+    font-size: 30px;
+  }
+
   .footer__content {
     gap: 20px;
   }
