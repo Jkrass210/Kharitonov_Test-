@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test</title>
+
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <div class="header__container container">
+      <div class="header__content">
+        <div class="header__logo-box logo-box">
+          <a class="logo-box__link" href="#">
+            <picture>
+              <source srcset="img/logo/logo150.webp" media="(max-width: 680px)">
+              <img class="logo-box__img" src="img/logo/logo200.webp" loading="lazy" alt="Логотип">
+            </picture>
+          </a>
+        </div>
+        <nav class="header__nav">
+          <ul class="header__items list-reset">
+            <li class="header__item">
+              <a class="header__link" href="#">Главная</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">O&nbsp;компании</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#projects">Проекты</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">Услуги</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__box burger">
+          <button class="burger__btn btn-reset" aria-label="Выпадающее меню" onclick="openNav(this)">
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="section projects" id="projects">
+      <div class="projects__container container">
+        <div class="projects__content">
+          <h1 class="projects__title">
+            Проекты нашей компании
+          </h1>
+          <ul class="projects__items list-reset">
+            <li class="projects__item">
+              <a class="projects__link" href="#">
+                <h3 class="projects__subtitle">
+                  Название проекта
+                </h3>
+              </a>
+            </li>
+            <li class="projects__item">
+              <a class="projects__link" href="#">
+                <h3 class="projects__subtitle">
+                  Более длинное название проекта
+                </h3>
+              </a>
+            </li>
+            <li class="projects__item">
+              <a class="projects__link" href="#">
+                <h3 class="projects__subtitle">
+                  Название
+                </h3>
+              </a>
+            </li>
+            <li class="projects__item">
+              <a class="projects__link" href="#">
+                <h3 class="projects__subtitle">
+                  Одно из&nbsp;названий одного из&nbsp;проектов
+                </h3>
+              </a>
+            </li>
+            <li class="projects__item">
+              <a class="projects__link" href="#">
+                <h3 class="projects__subtitle">
+                  Название-2
+                </h3>
+              </a>
+            </li>
+            <li class="projects__item">
+              <a class="projects__link" href="#">
+                <h3 class="projects__subtitle">
+                  Наименование проекта
+                </h3>
+              </a>
+            </li>
+            <li class="projects__item">
+              <a class="projects__link" href="#">
+                <h3 class="projects__subtitle">
+                  Проект
+                </h3>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__content">
+        <ul class="footer__items list-reset">
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite.svg#telegram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite.svg#whatsapp"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite.svg#youtube"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <div class="footer__group group-link">
+          <a class="group-link__link" href="mailto:info@company.com">
+            info@company.com
+          </a>
+          <a class="group-link__link" href="tel:+74951234567">
+            +7 495 123-45-67
+          </a>
+        </div>
+        <p class="footer__desc">
+          2022 © OOO &laquo;Компания&raquo;
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
